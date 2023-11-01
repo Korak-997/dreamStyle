@@ -1,0 +1,147 @@
+{
+  "common": {
+    "call": "Call Us:",
+    "address": "Address:",
+    "email": "Email:",
+    "home": "Home",
+    "appointment": "Appointment",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us",
+    "men": "Men",
+    "women": "Women",
+    "send": "Send",
+    "cancel": "Cancel",
+    "proveCancel": "You really want to cancel your Appointment ?",
+    "accept": "Accept",
+    "deny": "Deny",
+    "prices": "Prices",
+    "about": "About us",
+    "openTime": "Open Times",
+    "closed": "Closed",
+    "continue": "Continue",
+    "days": {
+      "mo-sa": "Monday-Saturday",
+      "su": "Sunday"
+    }
+  },
+  "flash": {
+    "appointmentSaved": "Appointment saved successfully, write the code above to confirm your appointment at the shop. Then close it.",
+    "appointmentNotSaved": "We are sorry but it seems there was a problem in saving your appointment. Please try again or contact the shop"
+  },
+  "slogan": {
+    "beThe": "BE THE",
+    "alpha": "ALPHA",
+    "wys": "WITH YOUR STYLE"
+  },
+
+  "home": {
+    "bookAppointment": {
+      "title": ""
+    }
+  },
+  "locale": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+
+  "appointment": {
+    "getAppointment": "Get Appointment",
+    "callUsForAppointment": "Call Us for Appointments",
+    "pickBarberType": "Pick Barber Type",
+    "pickDate": "Pick Date",
+    "pickedDate": "Chosen Date",
+    "pickTime": "Pick Time",
+    "saving": "Please wait we are saving your appointment",
+    "pickServices": "Pick your desired services",
+    "pickedServices": "Picked Services",
+    "menServices": {
+      "title": "Men Services",
+      "machineCut": "Machine Haircut",
+      "haircut": "Haircut",
+      "washCutDry": "Washing, Cutting, Drying",
+      "washDry": "Washing, Drying",
+      "beardShave": "Beard Shave",
+      "BeardTrim": "Beard Trim",
+      "wax": "Wax: Nose, Ears and Face",
+      "eyebrow": "Eyebrow (threading technique)",
+      "kid": "Kid haircut (until 10)",
+      "complete": "Complete Service (Men package"
+    },
+    "womenServices": {
+      "title": "Women Services",
+      "haircut": "Haircut",
+      "washCutDry": "Washing, Cutting, Drying",
+      "washDry": "Washing, Drying",
+      "eyebrow": "Eyebrow (threading technique)",
+      "coloration": "Coloration",
+      "strandsTop": "Head Strands",
+      "strands": "Complete Strands",
+      "ombre": "Ombre",
+      "singleStrand": "Single Strand",
+      "pony": "Pony",
+      "eyelashColor": "Eyelash Color",
+      "eyeBrowColor": "Eyebrow Color",
+      "eyeBrowPluck": "Eyebrow Pluck",
+      "faceHairPluck": "Face Hair Pluck",
+      "hairWash": "Hair Wash",
+      "headMassageWash": "Head, Massage, Wash",
+      "hairMaskHairCur": "Hair Mask, Hair Care",
+      "pickLength": "Pick your hair length",
+      "hairLength": {
+        "short": "Short",
+        "chin": "Until Chin",
+        "shoulder": "Until Shoulder",
+        "breast": "Breast",
+        "longBreast": "Longer than Breast"
+      }
+    }
+  },
+  "services": {
+    "men": "Men Services",
+    "women": "Women Services",
+    "kid": "Kid services"
+  },
+  "prices": {
+    "m": "M",
+    "h": "H",
+    "title": "Prices",
+    "service": "Service",
+    "cost": "Cost",
+    "forMen": "For Men",
+    "forWomen": "For Women",
+    "machineHairCut": "Machine Hair Cut",
+    "hairCut": "Hair Cut",
+    "washCutDry": "Washing, Cutting, Blow Dry",
+    "washDry": "Washing, Blow Dry",
+    "beardShave": "Beard Shave",
+    "beardTrim": "Beard Trim",
+    "wax": "Wax: Nose, Ears and Face",
+    "eyeBrow": "Eyebrow ",
+    "kid": "Children Haircut",
+    "complete": "Complete Service",
+    "coloration": "Coloration",
+    "strandsTop": "Head Strands",
+    "strands": "Complete Strands",
+    "extras": "Extras",
+    "ombre": "Ombre",
+    "cosmetic": "Cosmetic",
+    "length": "Length",
+    "creative": "Creative",
+    "singleStrand": "Single Strand",
+    "pony": "Pony",
+    "eyelashColor": "Eyelash Color",
+    "eyeBrowColor": "Eyebrow Color",
+    "eyeBrowPluck": "Eyebrow Pluck",
+    "faceHairPluck": "Face Hair Pluck",
+    "hairWash": "Hair Wash",
+    "headMassageWash": "Head, Massage, Wash",
+    "hairMaskHairCur": "Hair Mask, Hair Care",
+    "hairLength": {
+      "short": "Short",
+      "chin": "Chin",
+      "shoulder": "houlder",
+      "breast": "Breast",
+      "longBreast": "Breast+"
+    }
+  }
+}

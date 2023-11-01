@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="light"] {
+  --text: #060406;
+  --background: #f8f6f9;
+  --primary: #61476c;
+  --secondary: #e3dae7;
+  --accent: #856194;
+}
+:root[data-theme="dark"] {
+  --text: #fbf9fb;
+  --background: #080609;
+  --primary: #ad93b8;
+  --secondary: #211825;
+  --accent: #8f6b9e;
+}
+
+@font-face {
+  font-family: "Moli";
+  src: url("/fonts/Mooli-Regular.ttf");
+  font-display: swap;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: Moli;
+}

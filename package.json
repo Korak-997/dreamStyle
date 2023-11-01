@@ -1,0 +1,40 @@
+{
+  "name": "dream-style",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite --host",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
+    "@vuepic/vue-datepicker": "^5.4.0",
+    "autoprefixer": "^10.4.12",
+    "push.js": "^1.0.12",
+    "uuid": "^9.0.0",
+    "vue": "^3.2.37",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.2",
+    "vue-uuid": "^3.0.0",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "daisyui": "^2.6.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.31",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.23",
+    "vite": "^3.0.1"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "common": {
+    "call": "Rufen Sie uns an:",
+    "address": "Adresse:",
+    "email": "Email:",
+    "home": "Hauptseite",
+    "appointment": "Termin buchen",
+    "bookNow": "buchen Sie jetzt",
+    "contactUs": "Kontaktiere uns",
+    "men": "Männer",
+    "women": "Frauen",
+    "send": "Schicken",
+    "cancel": "Stornieren",
+    "proveCancel": "Sie möchten Ihren Termin wirklich absagen?",
+    "accept": "Akzeptieren",
+    "deny": "Alehnen",
+    "prices": "Preise",
+    "about": "Über uns",
+    "openTime": "Öffnungszeiten",
+    "closed": "Geschlossen",
+    "continue": "Weitermachen",
+    "days": {
+      "mo-sa": "Montag - Samstag",
+      "su": "Sonntag"
+    }
+  },
+  "flash": {
+    "appointmentSaved": "Der Termin wurde erfolgreich gespeichert. Geben Sie den Code oben ein, um Ihren Termin im Geschäft zu bestätigen. ",
+    "appointmentNotSaved": "Es tut uns leid, aber es scheint, dass beim Speichern Ihres Termins ein Problem aufgetreten ist. "
+  },
+  "slogan": {
+    "beThe": "SEI DER",
+    "alpha": "ALPHA",
+    "wys": "MIT DEINEM STIL"
+  },
+  "home": {
+    "bookAppointment": {
+      "title": ""
+    }
+  },
+  "locale": {
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "appointment": {
+    "getAppointment": "Termin Buchen",
+    "callUsForAppointment": "Rufen Sie uns um ein Termin zu buchen",
+    "pickBarberType": "Wählen Sie den Barber-Typ",
+    "pickDate": "Wählen Sie Datum",
+    "pickedDate": "Gewählte Datum",
+    "pickTime": "Wählen Sie Zeit",
+    "saving": "Bitte warten Sie, wir speichern Ihren Termin",
+    "pickServices": "Wählen Sie Ihre gewünschten Dienstleistungen aus",
+    "pickedServices": "Ausgewählte Dienste",
+    "menServices": {
+      "title": "Dienstleistungen für Männer",
+      "machineCut": "Maschineller Haarschnitt",
+      "haircut": "Haarschnitt",
+      "washCutDry": "Waschen, Schneiden, Föhnen",
+      "washDry": "Waschen, Föhnen",
+      "beardShave": "Bartrasur",
+      "BeardTrim": "Bartschneiden",
+      "wax": "Wax: Nase, Ohren und Gesicht",
+      "eyebrow": "Augenbrauen (Faden Technik)",
+      "kid": "Kinderhaarschnitt (bis 10)",
+      "complete": "Komplettservice (Herrenpaket)."
+    },
+    "womenServices": {
+      "title": "Frauendienste",
+      "haircut": "Haarschnitt",
+      "washCutDry": "Waschen, Schneiden, Föhnen",
+      "washDry": "Waschen, Föhnen",
+      "eyebrow": "Augenbraue (Faden Technik)",
+      "coloration": "Färbung",
+      "strandsTop": "Kopfstränge",
+      "strands": "Komplette Stränge",
+      "ombre": "Ombre",
+      "singleStrand": "Einzelner Strang",
+      "pony": "Pony",
+      "eyelashColor": "Wimpernfarbe",
+      "eyeBrowColor": "Augenbrauenfarbe",
+      "eyeBrowPluck": "Augenbrauen zupfen",
+      "faceHairPluck": "Gesichtshaarzupfung",
+      "hairWash": "Haare waschen",
+      "headMassageWash": "Kopf massage, Waschen",
+      "hairMaskHairCur": "Haarmaske, Haarpflege",
+      "pickLength": "Wählen Sie Ihre Haarlänge",
+      "hairLength": {
+        "short": "Kurz",
+        "chin": "Bis Chin",
+        "shoulder": "Bis zur Schulter",
+        "breast": "Brust",
+        "longBreast": "Länger als die Brust"
+      }
+    }
+  },
+  "services": {
+    "men": "Männer Dienstleistungen",
+    "women": "Frauen Dienstleistungen",
+    "kid": "Kinder Dienstleistungen"
+  },
+  "prices": {
+    "m": "M",
+    "h": "H",
+    "title": "Preise",
+    "service": "Service",
+    "cost": "Kosten",
+    "forMen": "Für Männer",
+    "forWomen": "Für Frauen",
+    "machineHairCut": "Maschineller Haarschnitt",
+    "hairCut": "Haarschnitt",
+    "washCutDry": "Waschen, Schneiden, Föhnen",
+    "washDry": "Waschen, Föhnen",
+    "beardShave": "Bartrasur",
+    "beardTrim": "Bartschneiden",
+    "wax": "Wachs: Nase, Ohren und Gesicht",
+    "eyeBrow": "Augenbrauen ",
+    "kid": "Kinderhaarschnitt",
+    "complete": "Kompletter Service",
+    "coloration": "Färbung",
+    "strandsTop": "Kopfstränge",
+    "strands": "Komplette Stränge",
+    "extras": "Extras",
+    "ombre": "Ombre",
+    "cosmetic": "Kosmetik",
+    "length": "Länge",
+    "creative": "Kreativ",
+    "singleStrand": "Einzelner Strang",
+    "pony": "Pony",
+    "eyelashColor": "Wimpernfarbe",
+    "eyeBrowColor": "Augenbrauenfarbe",
+    "eyeBrowPluck": "Augenbrauen zupfen",
+    "faceHairPluck": "Gesichtshaarzupfung",
+    "hairWash": "Haare waschen",
+    "headMassageWash": "Kopf Massage, Waschen",
+    "hairMaskHairCur": "Haarmaske, Haarpflege",
+    "hairLength": {
+      "short": "Kurz",
+      "chin": "Kinn",
+      "shoulder": "Schulter",
+      "breast": "Brust",
+      "longBreast": "Brust+"
+    }
+  }
+}
