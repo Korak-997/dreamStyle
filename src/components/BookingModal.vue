@@ -1,10 +1,10 @@
 <script>
-  export default {
-    name: "BookingModal",
-    props: {
-      show: Boolean,
-    },
-  };
+export default {
+  name: "BookingModal",
+  props: {
+    show: Boolean,
+  },
+};
 </script>
 <template>
   <div
