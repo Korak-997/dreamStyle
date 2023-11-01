@@ -1,15 +1,15 @@
 <script>
-  import { RouterLink } from "vue-router";
-  import LanguagePicker from "./LanguagePicker.vue";
+import { RouterLink } from "vue-router";
+import LanguagePicker from "./LanguagePicker.vue";
 
-  export default {
-    name: "NavbarComponent",
+export default {
+  name: "NavbarComponent",
 
-    components: {
-      RouterLink,
-      LanguagePicker,
-    },
-  };
+  components: {
+    RouterLink,
+    LanguagePicker,
+  },
+};
 </script>
 <template>
   <div>
@@ -24,11 +24,7 @@
       </div>
       <div class="navbar-center">
         <RouterLink to="/home">
-          <img
-            src="@/assets/logo.png"
-            class="h-24"
-            alt="logo"
-          />
+          <img src="@/assets/logo.png" class="h-24" alt="logo" />
         </RouterLink>
       </div>
       <div class="navbar-end">
