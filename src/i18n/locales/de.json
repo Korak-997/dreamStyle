@@ -28,14 +28,9 @@
     "appointmentSaved": "Der Termin wurde erfolgreich gespeichert. Geben Sie den Code oben ein, um Ihren Termin im Geschäft zu bestätigen. ",
     "appointmentNotSaved": "Es tut uns leid, aber es scheint, dass beim Speichern Ihres Termins ein Problem aufgetreten ist. "
   },
-  "slogan": {
-    "beThe": "SEI DER",
-    "alpha": "ALPHA",
-    "wys": "MIT DEINEM STIL"
-  },
   "home": {
     "bookAppointment": {
-      "title": ""
+      "title": "Um wie in deine Träume aussiehen"
     }
   },
   "locale": {
