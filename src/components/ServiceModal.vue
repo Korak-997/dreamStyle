@@ -1,11 +1,11 @@
 <script>
-  export default {
-    name: "ServiceModalModal",
-    props: {
-      show: Boolean,
-      service: Object,
-    },
-  };
+export default {
+  name: "ServiceModalModal",
+  props: {
+    show: Boolean,
+    service: Object,
+  },
+};
 </script>
 <template>
   <div
