@@ -15,7 +15,7 @@ export default {
 </script>
 <template>
   <footer
-    class="footer flex flex-wrap items-center justify-center gap-6 p-4 pb-6 shadow-sm shadow-neutral bg-black"
+    class="footer flex flex-wrap items-center justify-center gap-6 p-4 pb-6 shadow-sm shadow-primary bg-base-100"
   >
     <RouterLink to="/home">
       <img src="@/assets/logo.png" class="h-24" alt="logo" />

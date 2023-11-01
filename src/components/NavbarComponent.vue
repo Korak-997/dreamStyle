@@ -13,7 +13,7 @@ export default {
 </script>
 <template>
   <div>
-    <div class="navbar h-fit shadow-sm shadow-neutral bg-black">
+    <div class="navbar h-fit shadow-sm shadow-primary bg-base-100">
       <div class="navbar-start">
         <label
           for="my-drawer"
