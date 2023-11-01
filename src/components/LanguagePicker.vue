@@ -35,7 +35,7 @@ export default {
 
 <template>
   <div class="dropdown dropdown-end text-center">
-    <label tabindex="0" class="btn btn-ghost rounded-btn hover:border-primary"
+    <label tabindex="0" class="btn btn-primary btn-ghost rounded-btn"
       ><img
         :src="`/flags/${locale}.svg`"
         :alt="`Country flag for (${sLocale}) language`"
@@ -45,10 +45,10 @@ export default {
     /></label>
     <ul
       tabindex="0"
-      class="menu dropdown-content p-2 shadow bg-base-300 w-36 flex flex-col justify-around items-center"
+      class="menu dropdown-content p-2 shadow bg-base-100 w-36 flex flex-col justify-around items-center"
     >
       <li
-        class="w-full text-center border-b border-neutral hover:bg-secondary"
+        class="w-full text-center border-b border-neutral hover:bg-accent"
         v-for="sLocale in supportedLocales"
         :key="`locale-${sLocale}`"
         @click="

@@ -71,12 +71,13 @@ export default {
 <template>
   <div class="flex flex-col items-center justify-center">
     <ServiceModal :show="showServiceModal" :service="serviceToShow" />
-    <div class="bgw mt-4">
-      <div
-        class="w-full text-center h-full backdrop-blur-sm flex items-end justify-center backdrop-brightness-50"
-      >
-        <BookNowBtn />
-      </div>
+    <div
+      class="mt-4 shadow-lg shadow-primary rounded-md p-6 flex items-center justify-between flex-col gap-10"
+    >
+      <h1 class="text-4xl text-primary font-extrabold">
+        {{ $t("home.bookAppointment.title") }}
+      </h1>
+      <BookNowBtn />
     </div>
     <div class="my-6 w-11/12">
       <OpeningTimes />
@@ -105,21 +106,3 @@ export default {
     </div>
   </div>
 </template>
-<style scoped>
-.bgw {
-  height: 40vh;
-  width: 100vw;
-  background-position: center;
-  background-size: cover;
-  animation: image 8s infinite alternate;
-}
-
-@keyframes image {
-  0% {
-    background-image: url("../assets/model-1.webp");
-  }
-  100% {
-    background-image: url("../assets/model-2.webp");
-  }
-}
-</style>

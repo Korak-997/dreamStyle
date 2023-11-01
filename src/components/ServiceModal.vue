@@ -14,7 +14,7 @@ export default {
   >
     <div class="flex items-center justify-around flex-col gap-6 w-full">
       <div class="flex items-center justify-between w-11/12">
-        <h1 class="text-4xl font-extrabold text-white">
+        <h1 class="text-4xl font-extrabold text-primary">
           {{ $t(`${service.name}`) }}
         </h1>
         <button
@@ -28,7 +28,7 @@ export default {
         <p
           v-for="(item, index) in service.items"
           :key="index"
-          class="text-4xl font-extrabold bg-primary p-2 w-96"
+          class="text-4xl font-extrabold bg-primary p-2 w-96 text-white"
         >
           {{ item }}
         </p>

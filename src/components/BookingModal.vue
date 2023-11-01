@@ -12,7 +12,7 @@ export default {
     :class="{ 'modal-open': show }"
   >
     <div class="flex items-center justify-around flex-col w-11/12 gap-6">
-      <h1 class="font-bold text-neutral text-4xl bg-primary p-2">
+      <h1 class="font-bold text-white text-4xl bg-primary p-2">
         {{ $t("appointment.getAppointment") }}
       </h1>
       <div class="p-4 text-center">
