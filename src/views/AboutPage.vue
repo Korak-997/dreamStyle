@@ -1,16 +1,16 @@
 <script>
-  import BookNowBtn from "../components/BookNowBtn.vue";
+import BookNowBtn from "../components/BookNowBtn.vue";
 
-  export default {
-    name: "AboutPage",
-    data() {
-      return {};
-    },
-    components: {
-      BookNowBtn,
-    },
-    methods: {},
-  };
+export default {
+  name: "AboutPage",
+  data() {
+    return {};
+  },
+  components: {
+    BookNowBtn,
+  },
+  methods: {},
+};
 </script>
 <template>
   <div class="flex flex-col items-center justify-center gap-6">
