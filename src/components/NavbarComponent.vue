@@ -1,92 +1,98 @@
 <script>
-import { RouterLink } from "vue-router";
-import LanguagePicker from "./LanguagePicker.vue";
+  import { RouterLink } from "vue-router";
+  import LanguagePicker from "./LanguagePicker.vue";
 
-export default {
-  name: "NavbarComponent",
-
-  components: {
-    RouterLink,
-    LanguagePicker,
-  },
-};
+  export default {
+    name: "NavbarComponent",
+    data() {
+      return {
+        navLinks: [
+          {
+            text: "common.home",
+            url: "/home",
+            icon: "fa-solid fa-home",
+          },
+          {
+            text: "common.prices",
+            url: "/prices",
+            icon: "fa-solid fa-hand-holding-dollar",
+          },
+          {
+            text: "common.about",
+            url: "/about",
+            icon: "fa-solid fa-info",
+          },
+        ],
+      };
+    },
+    components: {
+      RouterLink,
+      LanguagePicker,
+    },
+  };
 </script>
 <template>
-  <div>
-    <div class="navbar h-fit shadow-sm shadow-primary bg-base-100">
-      <div class="navbar-start">
-        <label
-          for="my-drawer"
-          class="text-4xl hover:cursor-pointer text-primary hover:text-accent burger-wrapper"
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <button
+          tabindex="0"
+          class="menu-icon hover:rotate-90 md:hidden w-8 h-8 p-1 flex flex-col justify-between items-end"
         >
-          <div class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </label>
+          <span class="w-full h-1 rounded-sm bg-neutral"></span>
+          <span class="w-3/4 h-1 rounded-sm bg-neutral"></span>
+          <span class="w-1/2 h-1 rounded-sm bg-neutral"></span>
+        </button>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 h-fit"
+        >
+          <li
+            v-for="(link, idx) in navLinks"
+            :key="idx + 1"
+            class="text-neutral hover:text-primary"
+            :title="$t(link.text)"
+          >
+            <RouterLink :to="link.url">
+              <font-awesome-icon :icon="link.icon" />
+              {{ $t(link.text) }}
+            </RouterLink>
+          </li>
+        </ul>
       </div>
-      <div class="navbar-center">
-        <RouterLink to="/home">
-          <img src="@/assets/logo.png" class="h-24" alt="logo" />
-        </RouterLink>
-      </div>
-      <div class="navbar-end">
-        <language-picker></language-picker>
-      </div>
+    </div>
+    <div class="navbar-center hidden md:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li
+          v-for="(link, idx) in navLinks"
+          :key="idx + 1 * 10"
+          class="text-neutral hover:text-primary"
+          :title="$t(link.text)"
+        >
+          <RouterLink :to="link.url">
+            <font-awesome-icon :icon="link.icon" />
+            {{ $t(link.text) }}
+          </RouterLink>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <language-picker></language-picker>
     </div>
   </div>
 </template>
-<style>
-.burger-icon {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  box-shadow: 0 2px 10px var(--primary);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  overflow: hidden;
-}
+<style scoped>
+  .menu-icon {
+    transition: transform 0.4s;
+  }
 
-.burger-icon span {
-  position: absolute;
-  height: 2px;
-  width: 40px;
-  background-color: var(--primary);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.5s;
-}
+  .menu-icon span {
+    transition: width 0.4s, transform 0.4s, background-color 0.4s;
+  }
 
-.burger-icon span:nth-child(1) {
-  transform: translateY(-15px);
-  width: 25px;
-  left: 15px;
-}
-
-.burger-icon.burger-icon:hover span:nth-child(1) {
-  width: 40px;
-  transform: translateY(0px) rotate(45deg);
-  transition-delay: 0.125s;
-}
-
-.burger-icon span:nth-child(2) {
-  transform: translateY(15px);
-  width: 15px;
-  left: 15px;
-}
-
-.burger-icon.burger-icon:hover span:nth-child(2) {
-  width: 40px;
-  transform: translateY(0px) rotate(315deg);
-  transition-delay: 0.125s;
-}
-
-.burger-icon:hover span:nth-child(3) {
-  transform: translateX(60px);
-}
+  .menu-icon:hover span {
+    width: 0.25rem;
+    transform: translateX(-10px);
+    background-color: #ad93b8;
+  }
 </style>
