@@ -24,11 +24,6 @@
         return this.$store.getters.getIsBookingModalOpen;
       },
     },
-
-    created() {
-      this.$store.dispatch("getBarbersFromDB");
-      this.$store.dispatch("getAppointmentsFromDB");
-    },
     mounted() {
       const locale =
         JSON.parse(localStorage.getItem("alphaSalon")).settings.locale ??
