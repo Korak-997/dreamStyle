@@ -1,35 +1,35 @@
 <script>
-  import { RouterLink } from "vue-router";
-  import LanguagePicker from "./LanguagePicker.vue";
+import { RouterLink } from "vue-router";
+import LanguagePicker from "./LanguagePicker.vue";
 
-  export default {
-    name: "NavbarComponent",
-    data() {
-      return {
-        navLinks: [
-          {
-            text: "common.home",
-            url: "/home",
-            icon: "fa-solid fa-home",
-          },
-          {
-            text: "common.prices",
-            url: "/prices",
-            icon: "fa-solid fa-hand-holding-dollar",
-          },
-          {
-            text: "common.about",
-            url: "/about",
-            icon: "fa-solid fa-info",
-          },
-        ],
-      };
-    },
-    components: {
-      RouterLink,
-      LanguagePicker,
-    },
-  };
+export default {
+  name: "NavbarComponent",
+  data() {
+    return {
+      navLinks: [
+        {
+          text: "common.home",
+          url: "/home",
+          icon: "fa-solid fa-home",
+        },
+        {
+          text: "common.prices",
+          url: "/prices",
+          icon: "fa-solid fa-hand-holding-dollar",
+        },
+        {
+          text: "common.about",
+          url: "/about",
+          icon: "fa-solid fa-info",
+        },
+      ],
+    };
+  },
+  components: {
+    RouterLink,
+    LanguagePicker,
+  },
+};
 </script>
 <template>
   <div class="navbar bg-base-100">
@@ -82,17 +82,20 @@
   </div>
 </template>
 <style scoped>
-  .menu-icon {
-    transition: transform 0.4s;
-  }
+.menu-icon {
+  transition: transform 0.4s;
+}
 
-  .menu-icon span {
-    transition: width 0.4s, transform 0.4s, background-color 0.4s;
-  }
+.menu-icon span {
+  transition:
+    width 0.4s,
+    transform 0.4s,
+    background-color 0.4s;
+}
 
-  .menu-icon:hover span {
-    width: 0.25rem;
-    transform: translateX(-10px);
-    background-color: #ad93b8;
-  }
+.menu-icon:hover span {
+  width: 0.25rem;
+  transform: translateX(-10px);
+  background-color: #ad93b8;
+}
 </style>
