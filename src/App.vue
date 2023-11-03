@@ -1,13 +1,23 @@
 <script>
-  import { RouterView } from "vue-router";
-  import BookingModal from "./components/BookingModal.vue";
-  import FooterComponent from "./components/Footer.vue";
-  import NavbarComponent from "./components/NavbarComponent.vue";
+import { RouterView } from "vue-router";
+import BookingModal from "./components/BookingModal.vue";
+import FooterComponent from "./components/Footer.vue";
+import NavbarComponent from "./components/NavbarComponent.vue";
 
-  export default {
-    name: "App",
-    data() {
-      return {};
+export default {
+  name: "App",
+  data() {
+    return {};
+  },
+  components: {
+    NavbarComponent,
+    RouterView,
+    FooterComponent,
+    BookingModal,
+  },
+  computed: {
+    isBookModalOpen() {
+      return this.$store.getters.getIsBookingModalOpen;
     },
     components: {
       NavbarComponent,
@@ -19,26 +29,16 @@
       isBookModalOpen() {
         return this.$store.getters.getIsBookingModalOpen;
       },
-      components: {
-        NavbarComponent,
-        RouterView,
-        FooterComponent,
-        BookingModal,
-      },
-      computed: {
-        isBookModalOpen() {
-          return this.$store.getters.getIsBookingModalOpen;
-        },
-      },
-      mounted() {
-        const locale =
-          JSON.parse(localStorage.getItem("alphaSalon")).settings.locale ??
-          import.meta.env.VITE_DEFAULT_LOCALE;
-        const html = document.getElementsByTagName("html")[0];
-        html.lang = locale;
-      },
     },
-  };
+    mounted() {
+      const locale =
+        JSON.parse(localStorage.getItem("alphaSalon")).settings.locale ??
+        import.meta.env.VITE_DEFAULT_LOCALE;
+      const html = document.getElementsByTagName("html")[0];
+      html.lang = locale;
+    },
+  },
+};
 </script>
 
 <template>
@@ -51,7 +51,7 @@
 </template>
 
 <style>
-  .contact {
-    bottom: 5rem;
-  }
+.contact {
+  bottom: 5rem;
+}
 </style>
