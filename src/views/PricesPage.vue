@@ -1,12 +1,12 @@
 <script>
-  export default {
-    name: "PricesPage",
-    computed: {
-      services() {
-        return this.$store.getters.getServices;
-      },
+export default {
+  name: "PricesPage",
+  computed: {
+    services() {
+      return this.$store.getters.getServices;
     },
-  };
+  },
+};
 </script>
 <template>
   <div class="flex flex-col items-center justify-center gap-6">
@@ -47,22 +47,13 @@
           </tr>
         </thead>
         <tbody class="space-y-6 text-center divide-y divide-gray-700">
-          <tr
-            v-for="(service, idx) in services.women"
-            :key="idx"
-          >
-            <th
-              scope="row"
-              class="text-left"
-            >
+          <tr v-for="(service, idx) in services.women" :key="idx">
+            <th scope="row" class="text-left">
               <h3 class="py-3">
                 {{ $t(`prices.${service.name}`) }}
               </h3>
             </th>
-            <td
-              v-for="(length, i) in service.lengths"
-              :key="i"
-            >
+            <td v-for="(length, i) in service.lengths" :key="i">
               <span class="block text-sm">{{ length.price }}</span>
             </td>
           </tr>
@@ -85,14 +76,8 @@
           </tr>
         </thead>
         <tbody class="space-y-6 text-center divide-y divide-gray-700">
-          <tr
-            v-for="(service, idx) in services.men"
-            :key="idx"
-          >
-            <th
-              scope="row"
-              class="text-left"
-            >
+          <tr v-for="(service, idx) in services.men" :key="idx">
+            <th scope="row" class="text-left">
               <h3 class="py-3">{{ $t(`prices.${service.name}`) }}</h3>
             </th>
             <td>
