@@ -1,7 +1,7 @@
 <script>
   import { RouterLink } from "vue-router";
   import LanguagePicker from "./LanguagePicker.vue";
-
+  import ThemeSwitcher from "./ThemeSwitcher.vue";
   export default {
     name: "NavbarComponent",
     data() {
@@ -28,6 +28,7 @@
     components: {
       RouterLink,
       LanguagePicker,
+      ThemeSwitcher,
     },
   };
 </script>
@@ -77,6 +78,7 @@
       </ul>
     </div>
     <div class="navbar-end">
+      <ThemeSwitcher />
       <language-picker></language-picker>
     </div>
   </div>
