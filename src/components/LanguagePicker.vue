@@ -35,14 +35,18 @@ export default {
 
 <template>
   <div class="dropdown dropdown-end text-center">
-    <label tabindex="0" class="btn btn-primary btn-ghost rounded-btn"
-      ><img
+    <div
+      tabindex="0"
+      class="mx-4 hover:shadow-sm rounded-xl hover:shadow-primary hover:cursor-pointer"
+    >
+      <img
         :src="`/flags/${locale}.svg`"
         :alt="`Country flag for (${sLocale}) language`"
         class="w-8 rounded-xl"
         width="32px"
         height="32px"
-    /></label>
+      />
+    </div>
     <ul
       tabindex="0"
       class="menu dropdown-content p-2 shadow bg-base-100 w-36 flex flex-col justify-around items-center"

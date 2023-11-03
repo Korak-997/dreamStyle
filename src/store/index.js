@@ -184,20 +184,6 @@ export default createStore({
             },
           },
         },
-        extras: {
-          creative: {
-            name: "creative",
-            price: 35,
-          },
-          singleStrand: {
-            name: "singleStrand",
-            price: 10,
-          },
-          pony: {
-            name: "pony",
-            price: 10,
-          },
-        },
         ombre: {
           name: "ombre",
           lengths: {
@@ -213,36 +199,6 @@ export default createStore({
               name: "longBreast",
               price: 175,
             },
-          },
-        },
-        cosmetic: {
-          eyelashColor: {
-            name: "eyelashColor",
-            price: 10,
-          },
-          eyeBrowColor: {
-            name: "eyeBrowColor",
-            price: 10,
-          },
-          eyeBrowPluck: {
-            name: "eyeBrowPluck",
-            price: 10,
-          },
-          faceHairPluck: {
-            name: "faceHairPluck",
-            price: 20,
-          },
-          hairWash: {
-            name: "hairWash",
-            price: 10,
-          },
-          headMassageWash: {
-            name: "headMassageWash",
-            price: 15,
-          },
-          hairMaskHairCur: {
-            name: "hairMaskHairCur",
-            price: 15,
           },
         },
       },

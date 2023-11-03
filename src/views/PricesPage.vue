@@ -49,7 +49,9 @@ export default {
         <tbody class="space-y-6 text-center divide-y divide-gray-700">
           <tr v-for="(service, idx) in services.women" :key="idx">
             <th scope="row" class="text-left">
-              <h3 class="py-3">{{ service.name }}</h3>
+              <h3 class="py-3">
+                {{ $t(`prices.${service.name}`) }}
+              </h3>
             </th>
             <td v-for="(length, i) in service.lengths" :key="i">
               <span class="block text-sm">{{ length.price }}</span>
@@ -76,7 +78,7 @@ export default {
         <tbody class="space-y-6 text-center divide-y divide-gray-700">
           <tr v-for="(service, idx) in services.men" :key="idx">
             <th scope="row" class="text-left">
-              <h3 class="py-3">{{ service.name }}</h3>
+              <h3 class="py-3">{{ $t(`prices.${service.name}`) }}</h3>
             </th>
             <td>
               <span class="block text-sm">{{ service.price }}</span>
