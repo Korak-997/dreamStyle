@@ -11,6 +11,7 @@
     "women": "Frauen",
     "send": "Schicken",
     "cancel": "Stornieren",
+    "services": "Dienstleistungen",
     "proveCancel": "Sie möchten Ihren Termin wirklich absagen?",
     "accept": "Akzeptieren",
     "deny": "Alehnen",
@@ -31,7 +32,9 @@
   "home": {
     "bookAppointment": {
       "title": "Um wie in deine Träume aussiehen"
-    }
+    },
+    "ourTeam": "Unsere Team",
+    "gallery": "Gallery"
   },
   "locale": {
     "en": "English",
@@ -92,7 +95,41 @@
   "services": {
     "men": "Männer Dienstleistungen",
     "women": "Frauen Dienstleistungen",
-    "kid": "Kinder Dienstleistungen"
+    "kid": "Kinder Dienstleistungen",
+    "hairCut": "Haarschnitt",
+    "machineCut": "Maschineller Haarschnitt",
+    "haircut": "Haarschnitt",
+    "washCutDry": "Waschen, Schneiden, Föhnen",
+    "washDry": "Waschen, Föhnen",
+    "beardShave": "Bartrasur",
+    "BeardTrim": "Bartschneiden",
+    "wax": "Wax: Nase, Ohren und Gesicht",
+    "eyebrow": "Augenbrauen (Faden Technik)",
+    "complete": "Komplettservice (Herrenpaket).",
+    "coloration": "Färbung",
+    "strandsTop": "Kopfstränge",
+    "strands": "Komplette Stränge",
+    "ombre": "Ombre",
+    "singleStrand": "Einzelner Strang",
+    "pony": "Pony",
+    "eyelashColor": "Wimpernfarbe",
+    "eyeBrowColor": "Augenbrauenfarbe",
+    "eyeBrowPluck": "Augenbrauen zupfen",
+    "faceHairPluck": "Gesichtshaarzupfung",
+    "hairWash": "Haare waschen",
+    "headMassageWash": "Kopf massage, Waschen",
+    "hairMaskHairCur": "Haarmaske, Haarpflege",
+    "hairCutBoys": "Haarschnitt für Jungen",
+    "hairCutGirls": "Haarschnitt für Mäddels"
+  },
+  "about": {
+    "1": "Willkommen bei Dream Style, wo alle Ihre Haarträume wahr werden! Wir sind nicht nur Ihr gewöhnlicher Friseursalon, sondern ein Team leidenschaftlicher Friseure, die sich der Kreation Ihrer Traumfrisur und dem ultimativen Haar-Makeover-Erlebnis verschrieben haben. Betreten Sie unseren Salon und lassen Sie sich verwöhnen wie nie zuvor!",
+    "2": "Bei Dream Style bieten wir eine breite Palette an Dienstleistungen an, um alle Ihre Haarpflegebedürfnisse zu erfüllen. Ganz gleich, ob Sie auf der Suche nach einem fantastischen Haarschnitt, einer atemberaubenden Verwandlung der Haarfarbe oder einer luxuriösen Behandlung zur Wiederherstellung und Pflege Ihres Haares sind, bei uns sind Sie an der richtigen Adresse. Unsere erfahrenen Friseure beherrschen die neuesten Haartrends und -techniken und stellen sicher, dass Sie unseren Salon mit einer Frisur verlassen, die nicht nur zu Ihnen passt, sondern auch Ihr Selbstvertrauen auf ein neues Niveau bringt.",
+    "3": "Beginnen wir mit unseren unglaublichen Haarschneidediensten. Unsere Friseure haben ein Auge fürs Detail und wissen wirklich, wie wichtig ein guter Haarschnitt ist. Ob Sie einen klassischen Bob, einen trendigen Pixie-Schnitt oder lange, üppige Stufen wünschen, unsere Stylisten werden ihr Bestes geben, um Ihnen einen Haarschnitt zu verpassen, der Ihrer Gesichtsform schmeichelt und Ihre Gesichtszüge betont. Sie gehen auf Ihre Vorlieben ein und beraten Sie fachkundig über die beste Frisur, die zu Ihnen passt.",
+    "4": "Wenn Sie Ihrem Leben einen Hauch von Farbe verleihen möchten, sind unsere Haarfärbedienste genau das Richtige für Sie. Von lebendigen Highlights bis hin zu sattem und dimensionalem Balayage – unsere Coloristen sind in der Lage, atemberaubende Farbtransformationen zu kreieren. Sie wählen gemeinsam mit Ihnen den perfekten Farbton und die perfekte Technik aus, die zu Ihrem Hautton und Ihrem persönlichen Stil passt. Machen Sie sich bereit, mit Ihrer neuen Haarfarbe alle Blicke auf sich zu ziehen!",
+    "5": "Wir zeichnen uns nicht nur durch Haarschnitte und Farben aus, sondern legen auch großen Wert auf die Gesundheit und Pflege Ihrer Haare. Unsere Haarbehandlungen sind darauf ausgelegt, Ihr Haar zu reparieren, wiederherzustellen und zu revitalisieren. Von Tiefenpflegebehandlungen bis hin zu Keratin-Glättungstherapien – unsere erfahrenen Stylisten passen die perfekte Behandlung an Ihren Haartyp und Ihre Anliegen an. Verlassen Sie unseren Salon mit glänzendem, gesundem und kämmbarem Haar, das Ihnen das Gefühl geben wird, ein echter Superstar zu sein.",
+    "6": "Bei Dream Style geht es nicht nur um Haare, es geht darum, Ihnen ein unvergessliches Erlebnis zu bieten. Unser Salon strahlt eine fröhliche und einladende Atmosphäre aus, in der Sie sich entspannen und erholen können, während unsere Stylisten ihre Magie entfalten. Wir glauben an einen personalisierten Ansatz und nehmen uns die Zeit, Sie und Ihre Haarziele kennenzulernen, damit wir die gewünschten Ergebnisse liefern können.",
+    "7": "Warum also noch länger warten? Besuchen Sie Dream Style noch heute und erleben Sie den Friseursalon Ihrer Träume. Unser kompetentes Team und Leistungsspektrum erwartet Sie mit offenen Armen. Wir garantieren, dass Sie unseren Salon mit einem selbstbewussten, schönen Gefühl verlassen und bereit sind, die Welt mit Ihren fabelhaften Haaren zu erobern. Kommen Sie und lassen Sie uns Ihre Haarträume wahr werden!"
   },
   "prices": {
     "m": "M",

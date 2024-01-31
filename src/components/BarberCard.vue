@@ -1,6 +1,9 @@
 <script>
 export default {
-  name: "SocialLinks",
+  name: "BarberCard",
+  props: {
+    barber: Object,
+  },
   data() {
     return {
       links: [
@@ -13,18 +16,42 @@ export default {
 };
 </script>
 <template>
-  <div class="card flex flex-row items-center justify-around">
-    <a
-      v-for="(link, idx) in links"
-      :key="idx"
-      :href="link.url"
-      target="-blank"
-      class="relative flex items-center justify-center rounded-full p-2 text-primary text-2xl m-2"
-      :class="`social-link${idx + 1}`"
-      :aria-label="link.name"
-    >
-      <font-awesome-icon :icon="`fa-brands ${link.icon}`" />
-    </a>
+  <div class="max-w-md p-8 sm:flex sm:space-x-6 shadow-md shadow-accent">
+    <div class="flex-shrink-0 mb-6 h-44 w-44 sm:h-32 sm:w-32 sm:mb-0">
+      <img
+        :src="barber.picture"
+        alt="barber avatar"
+        class="object-cover object-center w-full h-full rounded-full"
+      />
+    </div>
+    <div class="flex flex-col space-y-4">
+      <div>
+        <h2 class="text-2xl font-semibold text-primary">{{ barber.name }}</h2>
+      </div>
+      <div class="space-y-1">
+        <span class="flex items-center space-x-2">
+          <font-awesome-icon icon="fa-solid fa-envelope" class="text-primary" />
+          <span class="text-primary">{{ barber.email }}</span>
+        </span>
+        <span class="flex items-center space-x-2">
+          <font-awesome-icon icon="fa-solid fa-phone" class="text-primary" />
+          <span class="text-primary">{{ barber.phone }}</span>
+        </span>
+      </div>
+      <div class="flex items-center justify-around">
+        <a
+          v-for="(link, idx) in links"
+          :key="idx"
+          :href="link.url"
+          target="-blank"
+          class="relative flex items-center justify-center rounded-full p-2 text-primary text-2xl m-2"
+          :class="`social-link${idx + 1}`"
+          :aria-label="link.name"
+        >
+          <font-awesome-icon :icon="`fa-brands ${link.icon}`" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>

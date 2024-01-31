@@ -13,10 +13,10 @@ is a Simple and lovely website for presenting a Barber Salon or a Barber Shop.
 ## Still to be added
 
 - [ ] Booking system, which allow customers book appointments as easy as possible
-- [ ] Gallery to showcase the work in the salon
+- [x] Gallery to showcase the work in the salon
 - [ ] Option that users can leave compliments and rate the service
 - [ ] Showing Customer reviews
-- [ ] Team section which shows who are working in the store
+- [x] Team section which shows who are working in the store
 
 ---
 

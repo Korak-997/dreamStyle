@@ -13,7 +13,7 @@ export default {
   <div>
     <button
       @click="show"
-      class="btn border-0 rounded-sm bg-accent outline-none inline-flex items-center justify-between text-white overflow-hidden cursor-pointer w-64"
+      class="btn border-0 rounded-sm bg-accent outline-none inline-flex items-center justify-between text-black overflow-hidden cursor-pointer w-64"
     >
       <i class="animation"></i> {{ $t("common.bookNow") }}
       <i class="animation"></i>

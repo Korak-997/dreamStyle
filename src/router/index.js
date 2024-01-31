@@ -5,10 +5,6 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/home",
-    },
-    {
-      path: "/home",
       name: "home",
       component: HomePage,
     },
@@ -27,6 +23,14 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutPage.vue"),
+    },
+    {
+      path: "/services",
+      name: "services",
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import("../views/ServicesPage.vue"),
     },
   ],
 });
