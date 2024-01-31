@@ -1,65 +1,65 @@
 <script>
-  import BookNowBtn from "../components/BookNowBtn.vue";
+import BookNowBtn from "../components/BookNowBtn.vue";
 
-  export default {
-    name: "ServicesPage",
-    data() {
-      return {
-        currentService: false,
-        services: {
-          men: {
-            name: "services.men",
-            items: [
-              "services.hairCut",
-              "services.machineCut",
-              "services.washCutDry",
-              "services.washDry",
-              "services.beardShave",
-              "services.BeardTrim",
-              "services.wax",
-              "services.eyebrow",
-              "services.complete",
-            ],
-          },
-          women: {
-            name: "services.women",
-            items: [
-              "services.haircut",
-              "services.washCutDry",
-              "services.washDry",
-              "services.eyebrow",
-              "services.coloration",
-              "services.strandsTop",
-              "services.strands",
-              "services.ombre",
-              "services.singleStrand",
-              "services.pony",
-              "services.eyelashColor",
-              "services.eyeBrowColor",
-              "services.eyeBrowPluck",
-              "services.faceHairPluck",
-              "services.hairWash",
-              "services.headMassageWash",
-              "services.hairMaskHairCur",
-            ],
-          },
-          children: {
-            name: "services.kid",
-            items: ["services.hairCutBoys", "services.hairCutGirls"],
-          },
+export default {
+  name: "ServicesPage",
+  data() {
+    return {
+      currentService: false,
+      services: {
+        men: {
+          name: "services.men",
+          items: [
+            "services.hairCut",
+            "services.machineCut",
+            "services.washCutDry",
+            "services.washDry",
+            "services.beardShave",
+            "services.BeardTrim",
+            "services.wax",
+            "services.eyebrow",
+            "services.complete",
+          ],
         },
-      };
-    },
-    components: {
-      BookNowBtn,
-    },
-    methods: {},
-    mounted() {
-      if (this.services[this.$route.query.service]) {
-        this.currentService = this.services[this.$route.query.service];
-      }
-    },
-  };
+        women: {
+          name: "services.women",
+          items: [
+            "services.haircut",
+            "services.washCutDry",
+            "services.washDry",
+            "services.eyebrow",
+            "services.coloration",
+            "services.strandsTop",
+            "services.strands",
+            "services.ombre",
+            "services.singleStrand",
+            "services.pony",
+            "services.eyelashColor",
+            "services.eyeBrowColor",
+            "services.eyeBrowPluck",
+            "services.faceHairPluck",
+            "services.hairWash",
+            "services.headMassageWash",
+            "services.hairMaskHairCur",
+          ],
+        },
+        children: {
+          name: "services.kid",
+          items: ["services.hairCutBoys", "services.hairCutGirls"],
+        },
+      },
+    };
+  },
+  components: {
+    BookNowBtn,
+  },
+  methods: {},
+  mounted() {
+    if (this.services[this.$route.query.service]) {
+      this.currentService = this.services[this.$route.query.service];
+    }
+  },
+};
 </script>
 <template>
   <div class="flex flex-col items-center justify-center gap-6">
@@ -90,10 +90,7 @@
         </div>
       </div>
     </div>
-    <div
-      v-if="currentService"
-      class="p-4"
-    >
+    <div v-if="currentService" class="p-4">
       <h1 class="text-4xl font-extrabold text-neutral">
         {{ $t(`${currentService.name}`) }}
       </h1>

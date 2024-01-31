@@ -41,7 +41,7 @@ library.add(
   faInfo,
   faList,
   faEnvelope,
-  faPhone
+  faPhone,
 );
 
 const app = createApp(App).use(i18n).use(store);

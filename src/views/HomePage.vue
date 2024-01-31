@@ -1,48 +1,48 @@
 <script>
-  import BookNowBtn from "../components/BookNowBtn.vue";
-  import OpeningTimes from "../components/OpeningTimes.vue";
-  import kidHairCut from "@/assets/servicesImgs/kid-haircut.webp";
-  import manHairCut from "@/assets/servicesImgs/man-haircut.webp";
-  import womanHaircut from "@/assets/servicesImgs/woman-haircut.webp";
-  import BarberCard from "../components/BarberCard.vue";
-  import GelleryComponent from "../components/GelleryComponent.vue";
-  export default {
-    name: "HomePage",
-    data() {
-      return {
-        showServiceModal: false,
-        services: {
-          men: {
-            img: manHairCut,
-            name: "men",
-            title: "services.men",
-          },
-          women: {
-            img: womanHaircut,
-            name: "women",
-            title: "services.women",
-          },
-          kinder: {
-            img: kidHairCut,
-            name: "children",
-            title: "services.kid",
-          },
+import BookNowBtn from "../components/BookNowBtn.vue";
+import OpeningTimes from "../components/OpeningTimes.vue";
+import kidHairCut from "@/assets/servicesImgs/kid-haircut.webp";
+import manHairCut from "@/assets/servicesImgs/man-haircut.webp";
+import womanHaircut from "@/assets/servicesImgs/woman-haircut.webp";
+import BarberCard from "../components/BarberCard.vue";
+import GelleryComponent from "../components/GelleryComponent.vue";
+export default {
+  name: "HomePage",
+  data() {
+    return {
+      showServiceModal: false,
+      services: {
+        men: {
+          img: manHairCut,
+          name: "men",
+          title: "services.men",
         },
-      };
-    },
-    computed: {
-      barbers() {
-        return this.$store.getters.getBarbers;
+        women: {
+          img: womanHaircut,
+          name: "women",
+          title: "services.women",
+        },
+        kinder: {
+          img: kidHairCut,
+          name: "children",
+          title: "services.kid",
+        },
       },
+    };
+  },
+  computed: {
+    barbers() {
+      return this.$store.getters.getBarbers;
     },
-    components: {
-      BookNowBtn,
-      OpeningTimes,
-      BarberCard,
-      GelleryComponent,
-    },
-    methods: {},
-  };
+  },
+  components: {
+    BookNowBtn,
+    OpeningTimes,
+    BarberCard,
+    GelleryComponent,
+  },
+  methods: {},
+};
 </script>
 <template>
   <div class="flex flex-col items-center justify-center">
@@ -58,10 +58,7 @@
       <OpeningTimes />
     </div>
     <div class="my-6 flex items-center justify-around flex-wrap gap-4">
-      <div
-        v-for="(service, index) in services"
-        :key="index"
-      >
+      <div v-for="(service, index) in services" :key="index">
         <RouterLink
           :to="`/services?service=${service.name}`"
           class="card w-96 h-96 bg-base-100 shadow-xl hover:cursor-pointer hover:shadow-sm hover:shadow-neutral rounded-none"

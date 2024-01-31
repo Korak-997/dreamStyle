@@ -1,41 +1,41 @@
 <script>
-  import { RouterLink } from "vue-router";
-  import LanguagePicker from "./LanguagePicker.vue";
-  import ThemeSwitcher from "./ThemeSwitcher.vue";
-  export default {
-    name: "NavbarComponent",
-    data() {
-      return {
-        navLinks: [
-          {
-            text: "common.home",
-            url: "/",
-            icon: "fa-solid fa-home",
-          },
-          {
-            text: "common.prices",
-            url: "/prices",
-            icon: "fa-solid fa-hand-holding-dollar",
-          },
-          {
-            text: "common.about",
-            url: "/about",
-            icon: "fa-solid fa-info",
-          },
-          {
-            text: "common.services",
-            url: "/services",
-            icon: "fa-solid fa-list",
-          },
-        ],
-      };
-    },
-    components: {
-      RouterLink,
-      LanguagePicker,
-      ThemeSwitcher,
-    },
-  };
+import { RouterLink } from "vue-router";
+import LanguagePicker from "./LanguagePicker.vue";
+import ThemeSwitcher from "./ThemeSwitcher.vue";
+export default {
+  name: "NavbarComponent",
+  data() {
+    return {
+      navLinks: [
+        {
+          text: "common.home",
+          url: "/",
+          icon: "fa-solid fa-home",
+        },
+        {
+          text: "common.prices",
+          url: "/prices",
+          icon: "fa-solid fa-hand-holding-dollar",
+        },
+        {
+          text: "common.about",
+          url: "/about",
+          icon: "fa-solid fa-info",
+        },
+        {
+          text: "common.services",
+          url: "/services",
+          icon: "fa-solid fa-list",
+        },
+      ],
+    };
+  },
+  components: {
+    RouterLink,
+    LanguagePicker,
+    ThemeSwitcher,
+  },
+};
 </script>
 <template>
   <div class="navbar bg-base-100">
@@ -90,17 +90,20 @@
   </div>
 </template>
 <style scoped>
-  .menu-icon {
-    transition: transform 0.4s;
-  }
+.menu-icon {
+  transition: transform 0.4s;
+}
 
-  .menu-icon span {
-    transition: width 0.4s, transform 0.4s, background-color 0.4s;
-  }
+.menu-icon span {
+  transition:
+    width 0.4s,
+    transform 0.4s,
+    background-color 0.4s;
+}
 
-  .menu-icon:hover span {
-    width: 0.25rem;
-    transform: translateX(-10px);
-    background-color: #ad93b8;
-  }
+.menu-icon:hover span {
+  width: 0.25rem;
+  transform: translateX(-10px);
+  background-color: #ad93b8;
+}
 </style>

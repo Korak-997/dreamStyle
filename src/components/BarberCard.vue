@@ -1,19 +1,19 @@
 <script>
-  export default {
-    name: "BarberCard",
-    props: {
-      barber: Object,
-    },
-    data() {
-      return {
-        links: [
-          { url: "www.instagram.com", icon: "fa-instagram", name: "Instagram" },
-          { url: "www.facebook.com", icon: "fa-facebook", name: "Facebook" },
-          { url: "www.tiktok.com", icon: "fa-tiktok", name: "TikTok" },
-        ],
-      };
-    },
-  };
+export default {
+  name: "BarberCard",
+  props: {
+    barber: Object,
+  },
+  data() {
+    return {
+      links: [
+        { url: "www.instagram.com", icon: "fa-instagram", name: "Instagram" },
+        { url: "www.facebook.com", icon: "fa-facebook", name: "Facebook" },
+        { url: "www.tiktok.com", icon: "fa-tiktok", name: "TikTok" },
+      ],
+    };
+  },
+};
 </script>
 <template>
   <div class="max-w-md p-8 sm:flex sm:space-x-6 shadow-md shadow-accent">
@@ -30,17 +30,11 @@
       </div>
       <div class="space-y-1">
         <span class="flex items-center space-x-2">
-          <font-awesome-icon
-            icon="fa-solid fa-envelope"
-            class="text-primary"
-          />
+          <font-awesome-icon icon="fa-solid fa-envelope" class="text-primary" />
           <span class="text-primary">{{ barber.email }}</span>
         </span>
         <span class="flex items-center space-x-2">
-          <font-awesome-icon
-            icon="fa-solid fa-phone"
-            class="text-primary"
-          />
+          <font-awesome-icon icon="fa-solid fa-phone" class="text-primary" />
           <span class="text-primary">{{ barber.phone }}</span>
         </span>
       </div>
@@ -61,67 +55,67 @@
   </div>
 </template>
 <style scoped>
-  a:nth-child(1):hover {
-    background: #f09433;
-    background: -moz-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    box-shadow: 0 0 10px #bc1888;
-    animation: bounce_613 0.8s linear;
-    color: snow;
+a:nth-child(1):hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  box-shadow: 0 0 10px #bc1888;
+  animation: bounce_613 0.8s linear;
+  color: snow;
+}
+
+a:nth-child(2):hover {
+  background-color: #4267b2;
+  box-shadow: 0 0 10px #4267b2;
+  animation: bounce_613 0.8s linear;
+  color: snow;
+}
+
+a:nth-child(3):hover {
+  background-color: #000;
+  box-shadow: 0 0 10px #848383;
+  animation: bounce_613 0.8s linear;
+  color: snow;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.2);
   }
 
-  a:nth-child(2):hover {
-    background-color: #4267b2;
-    box-shadow: 0 0 10px #4267b2;
-    animation: bounce_613 0.8s linear;
-    color: snow;
+  60% {
+    transform: scale(0.8);
   }
 
-  a:nth-child(3):hover {
-    background-color: #000;
-    box-shadow: 0 0 10px #848383;
-    animation: bounce_613 0.8s linear;
-    color: snow;
+  80% {
+    transform: scale(1.2);
   }
 
-  @keyframes bounce_613 {
-    40% {
-      transform: scale(1.2);
-    }
-
-    60% {
-      transform: scale(0.8);
-    }
-
-    80% {
-      transform: scale(1.2);
-    }
-
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
   }
+}
 </style>

@@ -1,12 +1,12 @@
 <script>
-  export default {
-    name: "OpeningTimes",
-    data() {
-      return {
-        days: ["mo-sa", "su"],
-      };
-    },
-  };
+export default {
+  name: "OpeningTimes",
+  data() {
+    return {
+      days: ["mo-sa", "su"],
+    };
+  },
+};
 </script>
 <template>
   <div
