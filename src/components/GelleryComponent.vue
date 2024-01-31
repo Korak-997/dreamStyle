@@ -35,4 +35,3 @@ export default {
     alt="Gallery Image"
   />
 </template>
-<style scoped></style>

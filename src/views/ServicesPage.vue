@@ -63,7 +63,7 @@ export default {
 </script>
 <template>
   <div class="flex flex-col items-center justify-center gap-6">
-    <!-- <BookNowBtn /> -->
+    <BookNowBtn />
     <div v-if="!currentService">
       <div
         v-for="service in services"
