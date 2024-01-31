@@ -38,10 +38,6 @@
 </script>
 <template>
   <div class="flex flex-col items-center justify-center">
-    <ServiceModal
-      :show="showServiceModal"
-      :service="serviceToShow"
-    />
     <div
       class="mt-4 shadow-lg shadow-primary rounded-md p-6 flex items-center justify-between flex-col gap-10"
     >
