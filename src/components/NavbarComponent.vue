@@ -44,6 +44,7 @@
         <button
           tabindex="0"
           class="menu-icon hover:rotate-90 md:hidden w-8 h-8 p-1 flex flex-col justify-between items-end"
+          aria-label="navbar icon"
         >
           <span class="w-full h-1 rounded-sm bg-neutral"></span>
           <span class="w-3/4 h-1 rounded-sm bg-neutral"></span>

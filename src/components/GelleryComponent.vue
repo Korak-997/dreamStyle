@@ -27,11 +27,12 @@
 <template>
   <img
     loading="lazy"
-    class="w-96 hover:cursor-zoom-in"
+    class="w-96"
     v-for="(image, index) of images"
     v-bind:src="getImgUrl(image)"
     v-bind:key="index"
     :onclick="handleZoom"
+    alt="Gallery Image"
   />
 </template>
 <style scoped></style>

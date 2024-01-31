@@ -7,9 +7,9 @@
     data() {
       return {
         links: [
-          { url: "www.instagram.com", icon: "fa-instagram" },
-          { url: "www.facebook.com", icon: "fa-facebook" },
-          { url: "www.tiktok.com", icon: "fa-tiktok" },
+          { url: "www.instagram.com", icon: "fa-instagram", name: "Instagram" },
+          { url: "www.facebook.com", icon: "fa-facebook", name: "Facebook" },
+          { url: "www.tiktok.com", icon: "fa-tiktok", name: "TikTok" },
         ],
       };
     },
@@ -52,6 +52,7 @@
           target="-blank"
           class="relative flex items-center justify-center rounded-full p-2 text-primary text-2xl m-2"
           :class="`social-link${idx + 1}`"
+          :aria-label="link.name"
         >
           <font-awesome-icon :icon="`fa-brands ${link.icon}`" />
         </a>
