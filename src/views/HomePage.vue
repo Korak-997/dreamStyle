@@ -4,6 +4,7 @@
   import kidHairCut from "@/assets/servicesImgs/kid-haircut.webp";
   import manHairCut from "@/assets/servicesImgs/man-haircut.webp";
   import womanHaircut from "@/assets/servicesImgs/woman-haircut.webp";
+  import BarberCard from "../components/BarberCard.vue";
 
   export default {
     name: "HomePage",
@@ -29,9 +30,15 @@
         },
       };
     },
+    computed: {
+      barbers() {
+        return this.$store.getters.getBarbers;
+      },
+    },
     components: {
       BookNowBtn,
       OpeningTimes,
+      BarberCard,
     },
     methods: {},
   };
@@ -67,6 +74,18 @@
             </p>
           </div>
         </RouterLink>
+      </div>
+    </div>
+    <div class="my-6 flex items-center justify-around flex-wrap gap-4 flex-col">
+      <h1 class="text-4xl text-primary font-extrabold">
+        {{ $t("home.ourTeam") }}
+      </h1>
+      <div class="flex items-center justify-around flex-wrap gap-4">
+        <BarberCard
+          v-for="barber in barbers"
+          :key="barber.id"
+          :barber="barber"
+        />
       </div>
     </div>
   </div>

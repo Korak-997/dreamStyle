@@ -3,8 +3,42 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     isBookingModalOpen: false,
-    barbers: [],
-    appointments: [],
+    barbers: [
+      {
+        name: "Oya Kumcuoğlu",
+
+        email: "oya.kumcuoglu@example.com",
+
+        age: 35,
+        phone: "(343)-742-0405",
+        id: "02155848",
+        picture: "https://randomuser.me/api/portraits/med/women/23.jpg",
+      },
+      {
+        name: "Ismael Muñoz",
+        email: "ismael.munoz@example.com",
+        age: 22,
+        phone: "908-636-903",
+        id: "85943067-Z",
+        picture: "https://randomuser.me/api/portraits/med/men/47.jpg",
+      },
+      {
+        name: "Enrique Mccoy",
+        email: "enrique.mccoy@example.com",
+        age: 24,
+        phone: "01-1260-5604",
+        id: "211967980",
+        picture: "https://randomuser.me/api/portraits/med/men/41.jpg",
+      },
+      {
+        name: "Brittany Romero",
+        email: "brittany.romero@example.com",
+        age: 41,
+        phone: "016977 24939",
+        id: "LE 15 42 39 P",
+        picture: "https://randomuser.me/api/portraits/med/women/46.jpg",
+      },
+    ],
     services: {
       men: {
         machineHaircut: {
@@ -207,6 +241,7 @@ export default createStore({
   getters: {
     getIsBookingModalOpen: (state) => state.isBookingModalOpen,
     getServices: (state) => state.services,
+    getBarbers: (state) => state.barbers,
   },
   mutations: {
     setIsBookingModalOpen: (state) =>
