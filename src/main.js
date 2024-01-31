@@ -14,6 +14,7 @@ import {
   faXmark,
   faCalendar,
   faHandHoldingDollar,
+  faList,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -36,6 +37,7 @@ library.add(
   faTiktok,
   faHandHoldingDollar,
   faInfo,
+  faList
 );
 
 const app = createApp(App).use(i18n).use(store);

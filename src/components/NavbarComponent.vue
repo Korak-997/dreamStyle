@@ -22,6 +22,11 @@
             url: "/about",
             icon: "fa-solid fa-info",
           },
+          {
+            text: "common.services",
+            url: "/services",
+            icon: "fa-solid fa-list",
+          },
         ],
       };
     },
