@@ -33,7 +33,8 @@
     "bookAppointment": {
       "title": "Um wie in deine Träume aussiehen"
     },
-    "ourTeam": "Unsere Team"
+    "ourTeam": "Unsere Team",
+    "gallery": "Gallery"
   },
   "locale": {
     "en": "English",

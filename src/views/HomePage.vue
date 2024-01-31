@@ -5,7 +5,7 @@
   import manHairCut from "@/assets/servicesImgs/man-haircut.webp";
   import womanHaircut from "@/assets/servicesImgs/woman-haircut.webp";
   import BarberCard from "../components/BarberCard.vue";
-
+  import GelleryComponent from "../components/GelleryComponent.vue";
   export default {
     name: "HomePage",
     data() {
@@ -39,6 +39,7 @@
       BookNowBtn,
       OpeningTimes,
       BarberCard,
+      GelleryComponent,
     },
     methods: {},
   };
@@ -87,6 +88,12 @@
           :barber="barber"
         />
       </div>
+    </div>
+    <h1 class="text-4xl text-primary font-extrabold my-6">
+      {{ $t("home.gallery") }}
+    </h1>
+    <div class="w-11/12 flex items-center justify-around flex-wrap gap-6">
+      <GelleryComponent />
     </div>
   </div>
 </template>
